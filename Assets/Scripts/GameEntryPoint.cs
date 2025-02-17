@@ -4,7 +4,7 @@ using System.Threading;
 using VContainer;
 using VContainer.Unity;
 
-public class GameManager : IAsyncStartable, ITickable
+public class GameEntryPoint : IAsyncStartable
 {
     [Inject] private Func<BattleProcess> _createBattleProcess;
 
@@ -13,11 +13,6 @@ public class GameManager : IAsyncStartable, ITickable
     public async UniTask StartAsync(CancellationToken cancellation)
     {
         BattleProcess battleProcess = _createBattleProcess();
-    }
-
-    public void Tick()
-    {
-        
     }
 
     private void StartBattle()
