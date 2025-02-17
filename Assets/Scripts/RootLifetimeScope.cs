@@ -14,7 +14,7 @@ public class RootLifetimeScope : LifetimeScope
 
         builder.RegisterFactory(() => CreateProcess(battleInstaller, this));
 
-        builder.RegisterEntryPoint<GameManager>();
+        builder.RegisterEntryPoint<GameEntryPoint>();
     }
 
     private static TProcess CreateProcess<TProcessParams, TProcess>(ProcessInstaller<TProcessParams, TProcess> installer, LifetimeScope parentLifetimeScope) where TProcessParams : IProcessParams where TProcess : IProcess<TProcessParams>
