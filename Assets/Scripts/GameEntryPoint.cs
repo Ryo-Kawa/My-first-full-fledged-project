@@ -6,12 +6,18 @@ using VContainer.Unity;
 
 public class GameEntryPoint : IAsyncStartable
 {
+    [Inject] private Func<SplashScreenProcess> _createSplashScreenProcess;
+    [Inject] private Func<HomeProcess> _createHomeProcess;
     [Inject] private Func<BattleProcess> _createBattleProcess;
 
     private Level? m_level = null;
 
     public async UniTask StartAsync(CancellationToken cancellation)
     {
+        SplashScreenProcess splashScreenProcess = _createSplashScreenProcess();
+
+        HomeProcess homeProcess = _createHomeProcess();
+    
         BattleProcess battleProcess = _createBattleProcess();
     }
 
