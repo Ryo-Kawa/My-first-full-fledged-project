@@ -1,3 +1,6 @@
+using System.Threading;
+using Cysharp.Threading.Tasks;
+
 public class BattleProcess : ProcessBase<BattleProcessParams>
 {
     private Level m_level = new();
