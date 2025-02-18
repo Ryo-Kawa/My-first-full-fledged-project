@@ -3,11 +3,9 @@ using Cysharp.Threading.Tasks;
 
 public class BattleProcess : ProcessBase<BattleProcessParams>
 {
-    private Level m_level = new();
-
     private async UniTask WaitForBattleFinish()
     {
-
+        Level level = new();
     }
     
     private void QuitBattle()
