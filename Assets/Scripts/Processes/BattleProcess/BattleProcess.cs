@@ -2,6 +2,11 @@ public class BattleProcess : ProcessBase<BattleProcessParams>
 {
     private Level m_level = new();
 
+    private async UniTask WaitForBattleFinish()
+    {
+
+    }
+    
     private void QuitBattle()
     {
         //m_level = null;
