@@ -1,22 +1,23 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using VContainer;
 using VContainer.Unity;
 
-public abstract class ProcessBase<TProcessParams> : IProcess<TProcessParams> where TProcessParams : IProcessParams
+public abstract class ProcessBase<TProcessParams> : IDisposable where TProcessParams : ProcessParamsBase
 {
     [Inject] protected readonly Canvas _canvas;
 
-    protected List<GameObject> _willDestroyObjectsOnDispose { get; } = new();
+    protected List<GameObject> WillDestroyObjectsOnDispose { get; } = new();
 
     public void Dispose()
     {
         if(LifetimeScope != null) LifetimeScope.Dispose();
 
-        foreach (var willDestroy in _willDestroyObjectsOnDispose)
+        foreach (var willDestroy in WillDestroyObjectsOnDispose)
         {
             if (willDestroy == null) continue;
-            Object.Destroy(willDestroy);
+            GameObject.Destroy(willDestroy);
         }
     }
 

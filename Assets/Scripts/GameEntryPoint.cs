@@ -13,9 +13,13 @@ public class GameEntryPoint : IAsyncStartable
     public async UniTask StartAsync(CancellationToken cancellation)
     {
         SplashScreenProcess splashScreenProcess = _createSplashScreenProcess();
+        splashScreenProcess.Dispose();
 
         HomeProcess homeProcess = _createHomeProcess();
-    
+        homeProcess.Dispose();
+
         BattleProcess battleProcess = _createBattleProcess();
+        await battleProcess.WaitForBattleFinish();
+        battleProcess.Dispose();
     }
 }

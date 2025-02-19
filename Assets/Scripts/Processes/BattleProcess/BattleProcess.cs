@@ -1,9 +1,9 @@
-using System.Threading;
 using Cysharp.Threading.Tasks;
+using UnityEngine;
 
 public class BattleProcess : ProcessBase<BattleProcessParams>
 {
-    private async UniTask WaitForBattleFinish()
+    public async UniTask WaitForBattleFinish()
     {
         Level level = new();
     }

@@ -9,6 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b9dbdadd77e74c4b9ee060ab6dbf431, type: 3}
-  m_Name: BattleProcessParams
+  m_Script: {fileID: 11500000, guid: fe31e55470cbd50478a010ffe94e4f05, type: 3}
+  m_Name: HomeProcessParams
   m_EditorClassIdentifier: 

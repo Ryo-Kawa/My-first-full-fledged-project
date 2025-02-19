@@ -1,3 +1,3 @@
 using UnityEngine;
 
-public abstract class ProcessParamsBase : ScriptableObject, IProcessParams {}
+public abstract class ProcessParamsBase : ScriptableObject {}

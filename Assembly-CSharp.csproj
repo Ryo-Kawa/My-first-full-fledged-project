@@ -60,22 +60,29 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.15f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Processes\ProcessParams\IProcessParams.cs" />
-    <Compile Include="Assets\Scripts\Processes\ProcessParams\BattleProcessParams.cs" />
-    <Compile Include="Assets\Scripts\System\InGame\Turn.cs" />
-    <Compile Include="Assets\Scripts\System\InGame\Magician\Magician.cs" />
-    <Compile Include="Assets\Scripts\System\InGame\Level.cs" />
+    <Compile Include="Assets\Scripts\Processes\SplashScreenProcess\SplashScreenProcessParams.cs" />
+    <Compile Include="Assets\Scripts\Processes\SplashScreenProcess\SplashScreenProcess.cs" />
+    <Compile Include="Assets\Scripts\GameEntryPoint.cs" />
+    <Compile Include="Assets\Scripts\Processes\ProcessParamsBase.cs" />
+    <Compile Include="Assets\Scripts\Processes\BattleProcess\Level.cs" />
+    <Compile Include="Assets\Scripts\Processes\BattleProcess\BattleProcessParams.cs" />
+    <Compile Include="Assets\Scripts\Processes\TitleProcess\TitleProcessParams.cs" />
+    <Compile Include="Assets\Scripts\Processes\BattleProcess\Turn.cs" />
+    <Compile Include="Assets\Scripts\Views\ViewBase.cs" />
+    <Compile Include="Assets\Scripts\Processes\BattleProcess\Magician\MagicianCard.cs" />
     <Compile Include="Assets\Scripts\System\KeyInputManager.cs" />
-    <Compile Include="Assets\Scripts\System\InGame\Magician\MagicianCard.cs" />
+    <Compile Include="Assets\Scripts\Processes\HomeProcess\HomeProcessParams.cs" />
     <Compile Include="Assets\Scripts\Processes\ProcessBase.cs" />
-    <Compile Include="Assets\Scripts\GameManager.cs" />
-    <Compile Include="Assets\Scripts\Processes\BattleProcess.cs" />
-    <Compile Include="Assets\Scripts\Processes\IProcess.cs" />
+    <Compile Include="Assets\Scripts\Processes\HomeProcess\HomeProcess.cs" />
+    <Compile Include="Assets\Scripts\Views\HomeView.cs" />
+    <Compile Include="Assets\Scripts\Processes\BattleProcess\Magician\Magician.cs" />
     <Compile Include="Assets\Scripts\RootLifetimeScope.cs" />
+    <Compile Include="Assets\Scripts\Views\BattleView.cs" />
     <Compile Include="Assets\Scripts\Processes\ProcessInstaller.cs" />
     <Compile Include="Assets\Scripts\System\Components.cs" />
-    <Compile Include="Assets\Scripts\Processes\ProcessParams\ProcessParamsBase.cs" />
+    <Compile Include="Assets\Scripts\Processes\TitleProcess\TitleProcess.cs" />
     <Compile Include="Assets\Scripts\System\MouseInputManager.cs" />
+    <Compile Include="Assets\Scripts\Processes\BattleProcess\BattleProcess.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

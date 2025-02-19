@@ -1,4 +1,4 @@
-public class SplashScreenProcess : ProcessBase<SplashProcessParams>
+public class SplashScreenProcess : ProcessBase<SplashScreenProcessParams>
 {
     
 }

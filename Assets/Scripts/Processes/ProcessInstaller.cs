@@ -1,7 +1,7 @@
 using VContainer;
 using VContainer.Unity;
 
-public class ProcessInstaller<TProcessParams, TProcess> : IInstaller where TProcessParams : IProcessParams where TProcess : IProcess<TProcessParams>
+public class ProcessInstaller<TProcessParams, TProcess> : IInstaller where TProcessParams : ProcessParamsBase where TProcess : ProcessBase<TProcessParams>
 {
     protected readonly TProcessParams _processParams;
 
