@@ -5,14 +5,11 @@ using VContainer;
 
 public class Level
 {
-    private readonly Dictionary<Magician, GameObject> _magicians = new();
-    private readonly Dictionary<MagicianCard, GameObject> _holding_cards = new();
+    public readonly Dictionary<Magician, GameObject> magicians = new();
+    public readonly Dictionary<MagicianCard, GameObject> holdingCards = new();
 
-    private readonly int Rows = 10;
-    private readonly int Columns = 10;
-
-    public List<Magician> Magicians { get => new(_magicians.Keys); }
-    public List<MagicianCard> HoldingMagicianCards { get => new(_holding_cards.Keys);  }
+    public readonly int Rows = 10;
+    public readonly int Columns = 10;
 
     //public void Init()
     //{
