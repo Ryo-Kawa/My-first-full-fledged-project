@@ -1,3 +1,4 @@
+using UnityEngine;
 using VContainer;
 using VContainer.Unity;
 
@@ -12,7 +13,7 @@ public class ProcessInstaller<TProcessParams, TProcess> : IInstaller where TProc
 
     public void Install(IContainerBuilder builder)
     {
-        builder.RegisterEntryPoint<TProcess>().As(typeof(TProcess));
         builder.RegisterInstance(_processParams).As(typeof(TProcessParams));
+        builder.Register<TProcess>(Lifetime.Scoped).As(typeof(TProcess));
     }
 }

@@ -70,7 +70,6 @@
     <Compile Include="Assets\Scripts\Processes\BattleProcess\Turn.cs" />
     <Compile Include="Assets\Scripts\Views\ViewBase.cs" />
     <Compile Include="Assets\Scripts\Processes\BattleProcess\Magician\MagicianCard.cs" />
-    <Compile Include="Assets\Scripts\System\KeyInputManager.cs" />
     <Compile Include="Assets\Scripts\Processes\HomeProcess\HomeProcessParams.cs" />
     <Compile Include="Assets\Scripts\Processes\ProcessBase.cs" />
     <Compile Include="Assets\Scripts\Processes\HomeProcess\HomeProcess.cs" />
@@ -79,9 +78,7 @@
     <Compile Include="Assets\Scripts\RootLifetimeScope.cs" />
     <Compile Include="Assets\Scripts\Views\BattleView.cs" />
     <Compile Include="Assets\Scripts\Processes\ProcessInstaller.cs" />
-    <Compile Include="Assets\Scripts\System\Components.cs" />
     <Compile Include="Assets\Scripts\Processes\TitleProcess\TitleProcess.cs" />
-    <Compile Include="Assets\Scripts\System\MouseInputManager.cs" />
     <Compile Include="Assets\Scripts\Processes\BattleProcess\BattleProcess.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -1054,10 +1051,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="UniRx.csproj">
-      <Project>{B596B686-F2ED-260E-5359-EC85B29937DE}</Project>
-      <Name>UniRx</Name>
-    </ProjectReference>
     <ProjectReference Include="UniTask.TextMeshPro.csproj">
       <Project>{9403A0ED-BED8-852D-056F-49CE3B4C14C8}</Project>
       <Name>UniTask.TextMeshPro</Name>

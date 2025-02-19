@@ -3,6 +3,10 @@ using UnityEngine;
 
 public class BattleProcess : ProcessBase<BattleProcessParams>
 {
+
+
+    public BattleProcess(BattleProcessParams processParams) : base(processParams) {}
+
     public async UniTask WaitForBattleFinish()
     {
         Level level = new();

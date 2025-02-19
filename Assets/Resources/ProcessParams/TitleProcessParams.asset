@@ -12,3 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d55be48e28430845aa73401731de6fc, type: 3}
   m_Name: TitleProcessParams
   m_EditorClassIdentifier: 
+  _titleViewPrefab: {fileID: 8670466569204374128, guid: 46af80050dfc48745be75d6b2302e235, type: 3}

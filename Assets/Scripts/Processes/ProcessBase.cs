@@ -1,14 +1,21 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
-using VContainer;
 using VContainer.Unity;
 
 public abstract class ProcessBase<TProcessParams> : IDisposable where TProcessParams : ProcessParamsBase
 {
-    [Inject] protected readonly Canvas _canvas;
+    protected TProcessParams ProcessParams;
+    protected readonly GameObject View;
 
     protected List<GameObject> WillDestroyObjectsOnDispose { get; } = new();
+
+    protected ProcessBase(TProcessParams processParams) 
+    { 
+        ProcessParams = processParams;
+        View = GameObject.Instantiate(ProcessParams.ViewPrefab);
+        WillDestroyObjectsOnDispose.Add(View);
+    }
 
     public void Dispose()
     {

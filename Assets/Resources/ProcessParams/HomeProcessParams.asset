@@ -12,3 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe31e55470cbd50478a010ffe94e4f05, type: 3}
   m_Name: HomeProcessParams
   m_EditorClassIdentifier: 
+  _homeViewPrefab: {fileID: 6585219589284140344, guid: a3684dc217fd08341823b5bfeb43600c, type: 3}

@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638738047773112004
-    m_Hash: 3152492764
+      ticks: 638755804372228721
+    m_Hash: 2712620123
   m_LockFileStatus:
     m_FilePath: C:/UnityGames/My first full-fledged project/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638738047773209295
-    m_Hash: 3076282171
+      ticks: 638755804372406600
+    m_Hash: 3463371721
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -52,58 +52,6 @@ m_ResolvedPackages:
   - async
   - Task
   - UniTask
-  registry:
-    id: main
-    name: 
-    url: https://packages.unity.com
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-    configSource: 0
-  hideInEditor: 1
-  isAssetStorePackage: 0
-  datePublishedTicks: 0
-  documentationUrl: 
-  hasRepository: 0
-  repository:
-    type: 
-    url: 
-    revision: 
-    path: 
-  unityLifecycle:
-    version: 
-    nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
-- packageId: com.neuecc.unirx@https://github.com/neuecc/UniRx.git?path=Assets/Plugins/UniRx/Scripts
-  testable: 0
-  isDirectDependency: 1
-  version: 7.1.0
-  source: 5
-  resolvedPath: C:\UnityGames\My first full-fledged project\Library\PackageCache\com.neuecc.unirx@6baeccf6c5
-  assetPath: Packages/com.neuecc.unirx
-  name: com.neuecc.unirx
-  displayName: UniRx
-  author:
-    name: 
-    email: 
-    url: 
-  category: 
-  type: 
-  description: Reactive Extensions for Unity
-  status: 0
-  errors: []
-  versions:
-    all: []
-    compatible: []
-    recommended: 
-    deprecated: []
-  dependencies: []
-  resolvedDependencies: []
-  keywords: []
   registry:
     id: main
     name: 
@@ -228,6 +176,7 @@ m_ResolvedPackages:
     - 2.5.1
     - 2.5.2
     - 2.6.0
+    - 2.7.1
     compatible:
     - 2.2.0
     - 2.3.1
@@ -236,6 +185,7 @@ m_ResolvedPackages:
     - 2.5.1
     - 2.5.2
     - 2.6.0
+    - 2.7.1
     recommended: 2.2.0
     deprecated: []
   dependencies: []
@@ -679,6 +629,7 @@ m_ResolvedPackages:
     - 1.8.5
     - 1.8.6
     - 1.8.7
+    - 1.8.8
     compatible:
     - 1.7.6
     - 1.8.0
@@ -689,6 +640,7 @@ m_ResolvedPackages:
     - 1.8.5
     - 1.8.6
     - 1.8.7
+    - 1.8.8
     recommended: 1.7.6
     deprecated: []
   dependencies:
@@ -3414,6 +3366,7 @@ m_ResolvedPackages:
     - 1.4.3
     - 1.4.4
     - 1.4.5
+    - 1.4.6
     - 2.0.1-exp.1
     - 2.0.1-exp.2
     - 2.0.1-pre.12
@@ -3435,6 +3388,7 @@ m_ResolvedPackages:
     - 1.4.3
     - 1.4.4
     - 1.4.5
+    - 1.4.6
     - 2.0.1-exp.1
     - 2.0.1-exp.2
     - 2.0.1-pre.12

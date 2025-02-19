@@ -12,3 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 405d2573c19bbef4fa8cc49e49af9e71, type: 3}
   m_Name: BattleProcessParams
   m_EditorClassIdentifier: 
+  _battleViewPrefab: {fileID: 3332535210753900167, guid: 91111823b8848f3429e2a87261a2865d, type: 3}

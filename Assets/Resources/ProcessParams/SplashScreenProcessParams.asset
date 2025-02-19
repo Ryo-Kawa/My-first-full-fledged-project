@@ -12,3 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 014fd31914d6bd14b831f7245ab5e107, type: 3}
   m_Name: SplashScreenProcessParams
   m_EditorClassIdentifier: 
+  _splashScreenViewPrefab: {fileID: 6259015406653166003, guid: 6d15f32ab9e072445927f17cb2738121, type: 3}

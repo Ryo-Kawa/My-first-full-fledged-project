@@ -11,8 +11,6 @@ public class RootLifetimeScope : LifetimeScope
 
     protected override void Configure(IContainerBuilder builder)
     {
-        builder.RegisterInstance(FindAnyObjectByType<Canvas>());
-
         ProcessInstaller<SplashScreenProcessParams, SplashScreenProcess> splashScreenInstaller = new(splashScreenProcessParams);
         ProcessInstaller<TitleProcessParams, TitleProcess> titleInstaller = new(titleProcessParams);
         ProcessInstaller<HomeProcessParams, HomeProcess> homeInstaller = new(homeProcessParams);
