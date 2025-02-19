@@ -6,9 +6,9 @@ public class MagicianCard
     public readonly int Attack;
     public readonly int Cost;
 
-    public MagicianCard(int max_hp, int attack, int cost)
+    public MagicianCard(int maxHp, int attack, int cost)
     {
-        MaxHp = max_hp;
+        MaxHp = maxHp;
         Attack = attack;
         Cost = cost;
     }
