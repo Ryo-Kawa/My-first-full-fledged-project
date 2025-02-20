@@ -8,8 +8,8 @@ public class Level
     public readonly Dictionary<Magician, GameObject> magicians = new();
     public readonly Dictionary<MagicianCard, GameObject> holdingCards = new();
 
-    public readonly int Rows = 10;
-    public readonly int Columns = 10;
+    public const int Rows = 10;
+    public const int Columns = 10;
 
     //public void Init()
     //{
