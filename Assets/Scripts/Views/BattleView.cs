@@ -6,7 +6,7 @@ public class GameView : ViewBase
 {
     public Button endTurnButton;
 
-    public readonly ObservableList<Button> magicianCardButtons = new();
+    [NonSerialized] public readonly ObservableList<Button> magicianCardButtons = new();
 
     private void Start()
     {
