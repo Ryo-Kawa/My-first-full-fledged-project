@@ -7,7 +7,7 @@ public class Level
 {
     public readonly Dictionary<Magician, GameObject> magicians = new();
     public readonly Dictionary<MagicianCard, GameObject> holdingCards = new();
-    private readonly Dictionary<MagicianCard, GameObject> deck = new();
+    private readonly Stack<MagicianCard> deck = new();
     
     public const int Rows = 10;
     public const int Columns = 10;
@@ -16,7 +16,7 @@ public class Level
     {
         for(int i = 0; i < 10; i++)
         {
-            deck.Add(new(100, 5, 1));
+            deck.Push(new(100, 5, 1));
         }
     }
 
