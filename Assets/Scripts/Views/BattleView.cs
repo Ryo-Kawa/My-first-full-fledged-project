@@ -1,14 +1,16 @@
 using ObservableCollections;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class GameView : ViewBase
 {
-    private readonly ObservableList<Button> _magicianCardButtons = new();
-
     public Button endTurnButton;
+
+    public readonly ObservableList<Button> magicianCardButtons = new();
 
     private void Start()
     {
-        _magicianCardButtons.ObserveAdd()
+        magicianCardButtons.ObserveAdd(button => Debug.Log("Added!"));
+        magicianCardButtons.ObserveRemove(button => Debug.Log("Removed!"));
     }
 }
