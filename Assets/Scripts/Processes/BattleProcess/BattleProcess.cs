@@ -8,7 +8,7 @@ public class BattleProcess : ProcessBase<BattleProcessParams>
 
     public async UniTask WaitForBattleFinish()
     {
-        Logic logic = new(new(), processParams.magicianCardPrefab);
+        Logic logic = new(new(), processParams);
     }
     
     private void QuitBattle()
