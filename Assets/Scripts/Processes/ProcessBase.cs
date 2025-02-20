@@ -5,23 +5,23 @@ using VContainer.Unity;
 
 public abstract class ProcessBase<TProcessParams> : IDisposable where TProcessParams : ProcessParamsBase
 {
-    protected TProcessParams ProcessParams;
-    protected readonly GameObject View;
+    protected TProcessParams processParams;
+    protected readonly GameObject view;
 
-    protected List<GameObject> WillDestroyObjectsOnDispose { get; } = new();
+    protected List<GameObject> willDestroyObjectsOnDispose = new();
 
     protected ProcessBase(TProcessParams processParams) 
     { 
-        ProcessParams = processParams;
-        View = GameObject.Instantiate(ProcessParams.ViewPrefab);
-        WillDestroyObjectsOnDispose.Add(View);
+        this.processParams = processParams;
+        view = GameObject.Instantiate(this.processParams.ViewPrefab);
+        willDestroyObjectsOnDispose.Add(view);
     }
 
     public void Dispose()
     {
         if(LifetimeScope != null) LifetimeScope.Dispose();
 
-        foreach (var willDestroy in WillDestroyObjectsOnDispose)
+        foreach (var willDestroy in willDestroyObjectsOnDispose)
         {
             if (willDestroy == null) continue;
             GameObject.Destroy(willDestroy);

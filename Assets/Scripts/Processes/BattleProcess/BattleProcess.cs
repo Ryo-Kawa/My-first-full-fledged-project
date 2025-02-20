@@ -1,5 +1,4 @@
 using Cysharp.Threading.Tasks;
-using UnityEngine;
 
 public class BattleProcess : ProcessBase<BattleProcessParams>
 {
@@ -9,7 +8,7 @@ public class BattleProcess : ProcessBase<BattleProcessParams>
 
     public async UniTask WaitForBattleFinish()
     {
-        Level level = new();
+        Logic logic = new(new(), processParams.magicianCardPrefab);
     }
     
     private void QuitBattle()

@@ -7,6 +7,6 @@ public class HomeProcess : ProcessBase<HomeProcessParams>
 
     public async UniTask WaitForBattleStart(CancellationToken cancellation)
     {
-        await View.GetComponent<HomeView>().startBattleButton.OnClickAsync(cancellation);
+        await view.GetComponent<HomeView>().startBattleButton.OnClickAsync(cancellation);
     }
 }
