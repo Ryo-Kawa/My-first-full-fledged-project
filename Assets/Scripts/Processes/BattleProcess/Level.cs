@@ -7,9 +7,18 @@ public class Level
 {
     public readonly Dictionary<Magician, GameObject> magicians = new();
     public readonly Dictionary<MagicianCard, GameObject> holdingCards = new();
-
+    private readonly Dictionary<MagicianCard, GameObject> deck = new();
+    
     public const int Rows = 10;
     public const int Columns = 10;
+
+    public Level()
+    {
+        for(int i = 0; i < 10; i++)
+        {
+            deck.Add(new(100, 5, 1));
+        }
+    }
 
     //public void Init()
     //{
@@ -34,7 +43,7 @@ public class Level
 
     //private void TakeOneMagicianCard()
     //{
-        //MagicianCard card = new(100, 5, 1);
+        //MagicianCard card = ;
 
         //GameObject game_object = GameObject.Instantiate(_game_objects.Get("magician_card_prefab"), Vector3.zero, Quaternion.identity);
         //Button button = game_object.GetComponentInChildren<Button>();
