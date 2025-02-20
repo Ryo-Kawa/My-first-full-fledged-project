@@ -25,9 +25,9 @@ public class Logic
     private void TakeOneCard()
     {
         MagicianCard card = _level.deck.Pop();
+        _level.holdingCards.Add(card);
+        
         GameObject cardObject = GameObject.Instantiate(_magicianCardPrefab);
         Button button = cardObject.GetComponentInChildren<Button>();
-
-        _level.holdingCards.Add(card, cardObject);
     }
 }
