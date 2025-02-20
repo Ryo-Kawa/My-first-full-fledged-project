@@ -4,12 +4,12 @@ using UnityEngine.UI;
 public class Logic
 {
     private Level _level;
-    private readonly GameObject _magicianCardPrefab;
+    private readonly BattleProcessParams _battleProcessParams;
     
-    public Logic(Level level, GameObject magicianCardPrefab)
+    public Logic(Level level, BattleProcessParams battleProcessParams)
     {
         _level = level;
-        _magicianCardPrefab = magicianCardPrefab;
+        _battleProcessParams = battleProcessParams;
     
         Init();
     }
@@ -27,7 +27,8 @@ public class Logic
         MagicianCard card = _level.deck.Pop();
         _level.holdingCards.Add(card);
         
-        GameObject cardObject = GameObject.Instantiate(_magicianCardPrefab);
+        GameObject cardObject = GameObject.Instantiate(_battleProcessParams);
         Button button = cardObject.GetComponentInChildren<Button>();
+        _battleProcessParams.GetComponent<GameView>();
     }
 }
