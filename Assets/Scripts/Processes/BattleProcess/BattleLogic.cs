@@ -19,11 +19,11 @@ public class BattleLogic
     {
         for(int i = 0; i < 5; i++)
         {
-            TakeOneCard();
+            TakeMagicianCard();
         }
     }
     
-    private void TakeOneCard()
+    private void TakeMagicianCard()
     {
         MagicianCard card = _level.deck.Pop();
         _level.holdingMagicianCards.Add(card);
