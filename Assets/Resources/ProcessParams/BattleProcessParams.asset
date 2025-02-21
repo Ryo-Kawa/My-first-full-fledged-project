@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: BattleProcessParams
   m_EditorClassIdentifier: 
   _battleViewPrefab: {fileID: 3332535210753900167, guid: 91111823b8848f3429e2a87261a2865d, type: 3}
+  magicianCardPrefab: {fileID: 5742190675850538975, guid: 78421b3bb27790241b5e97211f672e59, type: 3}

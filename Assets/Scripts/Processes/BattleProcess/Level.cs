@@ -1,12 +1,10 @@
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-using VContainer;
 
 public class Level
 {
     public readonly Dictionary<Magician, GameObject> magicians = new();
-    public readonly Dictionary<MagicianCard, GameObject> holdingCards = new();
+    public readonly List<MagicianCard> holdingMagicianCards = new();
     public readonly Stack<MagicianCard> deck = new();
     
     public const int Rows = 10;

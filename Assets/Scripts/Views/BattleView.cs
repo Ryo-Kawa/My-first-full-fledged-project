@@ -1,16 +1,33 @@
 using ObservableCollections;
+using R3;
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class GameView : ViewBase
+public class BattleView : ViewBase
 {
     public Button endTurnButton;
 
     [NonSerialized] public readonly ObservableList<Button> magicianCardButtons = new();
 
-    private void Start()
+    public void Init(Action<Button> magicCardButtonOnClick, Action endTurnOnClick)
     {
-        magicianCardButtons.ObserveAdd(button => Debug.Log("Added!"));
-        magicianCardButtons.ObserveRemove(button => Debug.Log("Removed!"));
+        magicianCardButtons.ObserveAdd(destroyCancellationToken).Subscribe(e =>
+        {
+            e.Value.OnClickAsObservable().Subscribe(_ =>
+            {
+                magicCardButtonOnClick(e.Value);
+            });
+        });
+
+        magicianCardButtons.ObserveRemove(destroyCancellationToken).Subscribe(e =>
+        {
+            Destroy(e.Value.GetComponentInParent<Canvas>().gameObject);
+        });
+
+        endTurnButton.OnClickAsObservable().Subscribe(_ =>
+        {
+            endTurnOnClick();
+        });
     }
 }
