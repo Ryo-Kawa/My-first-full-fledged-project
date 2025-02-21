@@ -39,30 +39,6 @@ public class Level
         //}
     //}
 
-    //private void TakeOneMagicianCard()
-    //{
-        //MagicianCard card = ;
-
-        //GameObject game_object = GameObject.Instantiate(_game_objects.Get("magician_card_prefab"), Vector3.zero, Quaternion.identity);
-        //Button button = game_object.GetComponentInChildren<Button>();
-
-        //button.onClick.AddListener(() => UseMagicianCard(card, game_object));
-
-        //_holding_cards.Add(card, game_object);
-
-        //UpdateMagicianCards();
-    //}
-
-    //private void UseMagicianCard(MagicianCard card, GameObject game_object)
-    //{
-        //SummonMagician(card, new Vector3(0, -9, 0));
-
-        //_holding_cards.Remove(card);
-        //GameObject.Destroy(game_object);
-
-        //UpdateMagicianCards();
-    //}
-
     //private Magician SummonMagician(MagicianCard card, Vector2 position)
     //{
         //Magician temp = new Magician(card.MaxHp, card.Attack, position);
