@@ -22,11 +22,6 @@ public class BattleLogic
             TakeOneCard();
         }
     }
-
-    public void QuitBattle()
-    {
-        
-    }
     
     private void TakeOneCard()
     {
@@ -38,6 +33,11 @@ public class BattleLogic
 
         Button button = cardObject.GetComponentInChildren<Button>();
         _battleView.magicianCardButtons.Add(button);
+    }
+
+    public void QuitBattle()
+    {
+        
     }
 
     public void UseMagicCard(Button button)
