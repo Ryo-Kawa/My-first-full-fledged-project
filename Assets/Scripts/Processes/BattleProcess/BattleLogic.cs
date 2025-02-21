@@ -42,7 +42,13 @@ public class BattleLogic
 
     public void UseMagicCard(Button button)
     {
+        SummonMagician();
         _battleView.magicianCardButtons.Remove(button);
+    }
+
+    private void SummonMagician()
+    {
+
     }
 
     public void EndTurn()
